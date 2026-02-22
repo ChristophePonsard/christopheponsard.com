@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "writing/index.html",
+    "href": "writing/index.html",
+    "title": "Writing",
+    "section": "",
+    "text": "Essays and notes."
+  },
+  {
+    "objectID": "writing/index.html#essays",
+    "href": "writing/index.html#essays",
+    "title": "Writing",
+    "section": "Essays",
+    "text": "Essays\n\n(Add essays here as you publish them.)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Christophe Ponsard",
+    "section": "",
+    "text": "Policy, systems & data.\n\nWriting\nSupport\nX (@ChPonsard)"
+  },
+  {
+    "objectID": "support/index.html",
+    "href": "support/index.html",
+    "title": "Support",
+    "section": "",
+    "text": "If you’d like to support my writing, you can do so here.\n(Next step: add a Stripe payment link, and optionally per-essay support links.)"
+  }
+]

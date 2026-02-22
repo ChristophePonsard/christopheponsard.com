@@ -1,9 +1,0 @@
----
-title: "Writing"
----
-
-Essays and notes.
-
-## Essays
-
-- *(Add essays here as you publish them.)*
