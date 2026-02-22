@@ -16,8 +16,6 @@
       border:1px solid #e5e5e5;
       border-radius:12px;
       padding:18px;
-      height: 900px;   /* ~5 tweets on most desktop screens */
-      overflow:auto;
     }
     .row{
       display:flex;
@@ -26,7 +24,20 @@
       gap:12px;
       flex-wrap:wrap;
     }
-    a{ text-decoration:none; }
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+    .social-link{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:500;
+    }
+    .social-link svg{
+      width:22px;
+      height:22px;
+    }
   </style>
 </head>
 <body>
@@ -35,16 +46,22 @@
 
   <section>
     <div class="row">
-      <h2 style="margin:0">Latest on X</h2>
-      <a href="https://x.com/ChPonsard" target="_blank" rel="noopener">View on X →</a>
+      <h2 style="margin:0">On X</h2>
     </div>
 
     <div class="card">
-      <a class="twitter-timeline"
-         data-height="860"
-         data-chrome="noheader nofooter noborders"
-         href="https://x.com/ChPonsard">
-        Loading timeline…
+      <a class="social-link"
+         href="https://x.com/ChPonsard"
+         target="_blank"
+         rel="noopener">
+         
+        <!-- Official X logo (SVG) -->
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor"
+                d="M18.244 2H21.5l-7.49 8.56L23 22h-6.828l-5.345-6.99L4.75 22H1.5l8.01-9.15L1 2h6.9l4.83 6.39L18.244 2Zm-1.197 18h1.886L7.02 3.9H5.02L17.047 20Z"/>
+        </svg>
+
+        Follow @ChPonsard on X
       </a>
     </div>
   </section>
@@ -52,7 +69,5 @@
   <footer style="margin-top:48px;font-size:0.95em">
     <a href="mailto:hello@christopheponsard.com">Contact</a>
   </footer>
-
-  <script async src="https://platform.twitter.com/widgets.js"></script>
 </body>
 </html>
