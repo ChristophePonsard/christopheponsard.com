@@ -16,7 +16,7 @@
       border:1px solid #e5e5e5;
       border-radius:12px;
       padding:18px;
-      height: 750px;
+      height: 900px;   /* ~5 tweets on most desktop screens */
       overflow:auto;
     }
     .row{
@@ -39,57 +39,20 @@
       <a href="https://x.com/ChPonsard" target="_blank" rel="noopener">View on X →</a>
     </div>
 
-    <div class="card" id="x-feed" style="position:relative;">
-  <div id="x-consent">
-    <p style="margin-top:0;">
-      <strong>X timeline</strong>
-    </p>
-    <p>
-      To protect your privacy, this embed is disabled by default. Clicking the button will load content from X.
-      X may set cookies or process site data.
-    </p>
-    <button id="x-load-btn" type="button">Load X feed</button>
-    <p style="margin-bottom:0; margin-top:10px; font-size:0.95em;">
-      If it does not load (adblockers or network restrictions), use the “View on X →” link above.
-    </p>
-  </div>
-
-  <div id="x-timeline" style="display:none;"></div>
-</div>
-
-<script>
-(function () {
-  const handle = "ChPonsard";
-  const btn = document.getElementById("x-load-btn");
-  const consent = document.getElementById("x-consent");
-  const timeline = document.getElementById("x-timeline");
-
-  function loadX() {
-    consent.style.display = "none";
-    timeline.style.display = "block";
-
-    timeline.innerHTML = `
+    <div class="card">
       <a class="twitter-timeline"
-         data-height="730"
-         data-dnt="true"
-         href="https://x.com/${handle}">
-         Loading timeline…
+         data-height="860"
+         data-chrome="noheader nofooter noborders"
+         href="https://x.com/ChPonsard">
+        Loading timeline…
       </a>
-    `;
-
-    const s = document.createElement("script");
-    s.src = "https://platform.twitter.com/widgets.js";
-    s.async = true;
-    document.body.appendChild(s);
-  }
-
-  btn.addEventListener("click", loadX);
-})();
-</script>
+    </div>
   </section>
 
   <footer style="margin-top:48px;font-size:0.95em">
     <a href="mailto:hello@christopheponsard.com">Contact</a>
   </footer>
+
+  <script async src="https://platform.twitter.com/widgets.js"></script>
 </body>
 </html>
