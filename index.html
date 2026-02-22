@@ -17,54 +17,55 @@
       border-radius:12px;
       padding:18px;
     }
-    .row{
+    .nav{
       display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
+      gap:14px;
       flex-wrap:wrap;
+      margin: 18px 0 28px;
     }
     a{
       text-decoration:none;
       color:inherit;
     }
-    .social-link{
-      display:flex;
+    .pill{
+      border:1px solid #e5e5e5;
+      border-radius:999px;
+      padding:8px 12px;
+      font-weight:600;
+      display:inline-flex;
       align-items:center;
       gap:10px;
-      font-weight:500;
     }
-    .social-link svg{
-      width:22px;
-      height:22px;
-    }
+    .pill svg{ width:18px; height:18px; }
+    .muted{ color:#666; }
   </style>
 </head>
 <body>
   <h1>Christophe Ponsard</h1>
-  <p>Policy, Systems &amp; Data.</p>
+  <p class="muted">Policy, Systems &amp; Data.</p>
 
-  <section>
-    <div class="row">
-      <h2 style="margin:0">On X</h2>
-    </div>
+  <nav class="nav" aria-label="Primary">
+    <a class="pill" href="/writing/">Writing</a>
+    <a class="pill" href="/support/">Support</a>
 
-    <div class="card">
-      <a class="social-link"
-         href="https://x.com/ChPonsard"
-         target="_blank"
-         rel="noopener">
-         
-        <!-- Official X logo (SVG) -->
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path fill="currentColor"
-                d="M18.244 2H21.5l-7.49 8.56L23 22h-6.828l-5.345-6.99L4.75 22H1.5l8.01-9.15L1 2h6.9l4.83 6.39L18.244 2Zm-1.197 18h1.886L7.02 3.9H5.02L17.047 20Z"/>
-        </svg>
+    <a class="pill" href="https://x.com/ChPonsard" target="_blank" rel="noopener">
+      <!-- X logo SVG -->
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="currentColor"
+              d="M18.244 2H21.5l-7.49 8.56L23 22h-6.828l-5.345-6.99L4.75 22H1.5l8.01-9.15L1 2h6.9l4.83 6.39L18.244 2Zm-1.197 18h1.886L7.02 3.9H5.02L17.047 20Z"/>
+      </svg>
+      @ChPonsard
+    </a>
+  </nav>
 
-        Follow @ChPonsard on X
-      </a>
-    </div>
-  </section>
+  <div class="card">
+    <p style="margin-top:0;">
+      I write about global policy, institutions, and systems—often from a data/engineering perspective.
+    </p>
+    <p style="margin-bottom:0;">
+      Start with <a href="/writing/" style="text-decoration:underline;">Writing</a>, or follow along on X.
+    </p>
+  </div>
 
   <footer style="margin-top:48px;font-size:0.95em">
     <a href="mailto:hello@christopheponsard.com">Contact</a>
