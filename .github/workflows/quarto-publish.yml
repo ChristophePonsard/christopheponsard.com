@@ -26,8 +26,24 @@ jobs:
 
       - name: Install TinyTeX (Quarto-managed)
         run: |
+          set -euo pipefail
+
           quarto install tinytex --no-prompt
-          echo "$HOME/.TinyTeX/bin/x86_64-linux" >> $GITHUB_PATH
+
+          # Find TinyTeX bin directory robustly
+          TEXBIN="$(find "$HOME/.TinyTeX/bin" -maxdepth 2 -type f -name tlmgr -printf '%h\n' | head -n 1)"
+
+          if [ -z "${TEXBIN}" ]; then
+            echo "Could not find tlmgr under $HOME/.TinyTeX/bin"
+            find "$HOME/.TinyTeX/bin" -maxdepth 3 -type f | head -n 50
+            exit 1
+          fi
+
+          # Make TeX available immediately (this step) AND for later steps
+          export PATH="${TEXBIN}:$PATH"
+          echo "${TEXBIN}" >> "$GITHUB_PATH"
+
+          # Sanity checks
           tlmgr --version
           lualatex --version
 
