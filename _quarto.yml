@@ -5,6 +5,7 @@ project:
     - CNAME
     - "writing/*.pdf"
     - "downloads/**"
+    - "pdfs/**"
 
 website:
   title: "Christophe Ponsard"
