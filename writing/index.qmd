@@ -1,5 +1,12 @@
 ---
 title: "Writing"
+listing:
+  contents:
+    - "*.qmd"
+  sort: "date desc"
+  fields: [title, date, description, categories]
+  filter-ui: true
+  categories: true
 ---
 
 Essays and notes.
