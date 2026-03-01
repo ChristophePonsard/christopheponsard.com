@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://christopheponsard.com/writing/index.html</loc>
-    <lastmod>2026-03-01T20:38:43.185Z</lastmod>
-  </url>
-  <url>
-    <loc>https://christopheponsard.com/index.html</loc>
-    <lastmod>2026-03-01T20:38:43.184Z</lastmod>
+    <loc>https://christopheponsard.com/writing/test.html</loc>
+    <lastmod>2026-03-01T20:39:48.234Z</lastmod>
   </url>
   <url>
     <loc>https://christopheponsard.com/support/index.html</loc>
-    <lastmod>2026-03-01T20:38:43.185Z</lastmod>
+    <lastmod>2026-03-01T20:39:48.233Z</lastmod>
+  </url>
+  <url>
+    <loc>https://christopheponsard.com/index.html</loc>
+    <lastmod>2026-03-01T20:39:48.233Z</lastmod>
+  </url>
+  <url>
+    <loc>https://christopheponsard.com/writing/index.html</loc>
+    <lastmod>2026-03-01T20:39:48.233Z</lastmod>
   </url>
 </urlset>
