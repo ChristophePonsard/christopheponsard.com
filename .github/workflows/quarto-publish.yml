@@ -15,7 +15,7 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 35
 
     steps:
       - name: Checkout
@@ -24,8 +24,12 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Install TinyTeX (for PDF output)
-        uses: r-lib/actions/setup-tinytex@v2
+      - name: Install TinyTeX (Quarto-managed)
+        run: |
+          quarto install tinytex --no-prompt
+          echo "$HOME/.TinyTeX/bin/x86_64-linux" >> $GITHUB_PATH
+          tlmgr --version
+          lualatex --version
 
       - name: Render site (HTML + PDF)
         run: quarto render
