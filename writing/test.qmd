@@ -1,6 +1,9 @@
 ---
 title: "test"
 date: 2026-03-01
+format:
+  html: default
+  pdf: default
 description: "Test post to validate HTML + PDF workflow."
 categories: [test]
 # We'll turn on pdf output once CI is ready (see section 4)
