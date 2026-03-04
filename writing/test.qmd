@@ -1,6 +1,6 @@
 ---
 title: "test"
-date: ""
+date: "" # hides date (works with your YAML validation)
 description: "Test post to validate HTML + PDF workflow."
 categories: [test]
 format:
