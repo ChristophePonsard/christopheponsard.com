@@ -20,4 +20,4 @@ categories: [test]
 test
 
 <!-- Once PDFs are enabled, this link will work (see section 4) -->
-- **Download PDF:** *(enabled soon)*
+<a href="/writing/test.pdf" target="_blank" rel="noopener">Download PDF</a>
