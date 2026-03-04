@@ -1,14 +1,14 @@
 ---
 title: "test"
 date: 2026-03-01
+description: "Test post to validate HTML + PDF workflow."
+categories: [test]
 format:
   html: default
   pdf: default
-description: "Test post to validate HTML + PDF workflow."
-categories: [test]
-# We'll turn on pdf output once CI is ready (see section 4)
 ---
 
+::: {.content-visible when-format="html"}
 <div style="border:1px solid #e5e5e5;border-radius:12px;padding:14px;margin:16px 0;">
   <strong>Support this essay</strong><br/>
   <a href="https://YOUR-STRIPE-LINK-HERE" target="_blank" rel="noopener"
@@ -17,7 +17,7 @@ categories: [test]
   </a>
 </div>
 
-test
-
-<!-- Once PDFs are enabled, this link will work (see section 4) -->
 <a href="/writing/test.pdf" target="_blank" rel="noopener">Open PDF</a>
+:::
+
+test
