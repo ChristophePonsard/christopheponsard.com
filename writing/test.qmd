@@ -1,6 +1,6 @@
 ---
 title: "test"
-date: 2026-03-01
+date: false
 description: "Test post to validate HTML + PDF workflow."
 categories: [test]
 format:
